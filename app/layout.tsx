@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Delivery PWA",
   description: "Track your deliveries in real-time",
   applicationName: "Delivery Tracker",
+  manifest: "/manifest.webmanifest", // 👈 ADD THIS EXACT LINE
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
