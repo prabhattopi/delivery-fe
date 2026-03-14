@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   title: "Delivery PWA",
   description: "Track your deliveries in real-time",
   applicationName: "Delivery Tracker",
-  manifest: "/manifest.webmanifest", // 👈 ADD THIS EXACT LINE
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -24,7 +23,7 @@ export const viewport: Viewport = {
   themeColor: "#3b82f6",
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1, 
+  maximumScale: 1,
 };
 
 export default function RootLayout({
@@ -33,7 +32,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // suppressHydrationWarning STOPS browser extensions from crashing your app
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <RegisterSW />
