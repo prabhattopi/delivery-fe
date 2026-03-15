@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next'
- 
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Delivery Tracker PWA',
@@ -11,15 +11,14 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: '#3b82f6',
     icons: [
       {
-        src: 'https://api.iconify.design/mdi/truck-delivery.png?width=192&height=192&color=%233b82f6',
+        src: '/icons/icon-192x192.png',
         sizes: '192x192',
         type: 'image/png',
       },
       {
-        src: 'https://api.iconify.design/mdi/truck-delivery.png?width=512&height=512&color=%233b82f6',
+        src: '/icons/icon-512x512.png',
         sizes: '512x512',
         type: 'image/png',
-        purpose: 'maskable', // 👈 Fixed: This MUST be exactly 'maskable' to pass the Vercel build!
       },
     ],
   }
